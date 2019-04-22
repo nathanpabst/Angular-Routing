@@ -32,7 +32,9 @@ const appRoutes: Routes = [
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(appRoutes)  
+      RouterModule.forRoot(appRoutes)  
+        //useHash is not best practice for routing
+        //RouterModule.forRoot(appRoutes, {useHash: true} )  
     ],
     exports: [
         RouterModule
